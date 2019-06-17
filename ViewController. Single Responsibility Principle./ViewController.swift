@@ -11,15 +11,11 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let urlString = "https://raw.githubusercontent.com/Softex-Group/task-mobile/master/test.json"
     
-    let urlFreeGames = "https://rss.itunes.apple.com/api/v1/us/ios-apps/top-free-ipad/all/10/explicit.json"
-    
-    let urlNewGames = "https://rss.itunes.apple.com/api/v1/us/ios-apps/new-games-we-love/all/10/explicit.json"
     
     // Внешние зависимости
     //var networkService = NetworkService()
-    var nerworkDataFetcher = NetworkDataFetcher()
+    var dataFetcherService = DataFetcherService()
     let dataStore = DataStore()
     
     // Элементы пользовательского интерфейса
@@ -33,16 +29,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         saveButton.layer.cornerRadius = saveButton.frame.width / 2
         
-        nerworkDataFetcher.fetchNewGames(urlString: urlNewGames) { (newGames) in
-            print(newGames?.feed.results.first?.name)
+        dataFetcherService.fetchCountry { (countries) in
+            print(countries?.first?.Name)
         }
         
-        nerworkDataFetcher.fetchFreeGames(urlString: urlFreeGames) { (freeGames) in
+        dataFetcherService.fetchFreeGames { (freeGames) in
             print(freeGames?.feed.results.first?.name)
         }
-
-        nerworkDataFetcher.fetchCountry(urlString: urlString) { (countries) in
-            print(countries?.first?.Name)
+        
+        dataFetcherService.fetchNewGames { (newGames) in
+            print(newGames?.feed.results.first?.name)
         }
     }
     

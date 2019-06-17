@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F008AF8E22B6EEC900B2CB59 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F008AF8D22B6EEC900B2CB59 /* AppGroup.swift */; };
+		F008AF9022B6F66800B2CB59 /* DataFetcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F008AF8F22B6F66800B2CB59 /* DataFetcherService.swift */; };
 		F0C1E94622B2AA86009AB9DA /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C1E94522B2AA86009AB9DA /* CountryModel.swift */; };
 		F0C1E94822B2AADA009AB9DA /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C1E94722B2AADA009AB9DA /* NetworkDataFetcher.swift */; };
 		F0DB6F6822959F3400D7E2F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DB6F6722959F3400D7E2F0 /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		F008AF8D22B6EEC900B2CB59 /* AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroup.swift; sourceTree = "<group>"; };
+		F008AF8F22B6F66800B2CB59 /* DataFetcherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcherService.swift; sourceTree = "<group>"; };
 		F0C1E94522B2AA86009AB9DA /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
 		F0C1E94722B2AADA009AB9DA /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
 		F0DB6F6422959F3400D7E2F0 /* ViewController. Single Responsibility Principle..app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ViewController. Single Responsibility Principle..app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +53,7 @@
 				F0C1E94A22B2AC4F009AB9DA /* Models */,
 				F0F81CB922A1C0FB00476FB6 /* NetworkService.swift */,
 				F0C1E94722B2AADA009AB9DA /* NetworkDataFetcher.swift */,
+				F008AF8F22B6F66800B2CB59 /* DataFetcherService.swift */,
 				F0F81CBB22A1C24500476FB6 /* DataStore.swift */,
 			);
 			path = Services;
@@ -173,6 +176,7 @@
 				F0F81CBA22A1C0FB00476FB6 /* NetworkService.swift in Sources */,
 				F0DB6F6822959F3400D7E2F0 /* AppDelegate.swift in Sources */,
 				F0C1E94622B2AA86009AB9DA /* CountryModel.swift in Sources */,
+				F008AF9022B6F66800B2CB59 /* DataFetcherService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
